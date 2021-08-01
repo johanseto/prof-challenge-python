@@ -3,7 +3,7 @@ from datetime import datetime
 def execution_time(func):
     def wrapper(*args, **kwargs):
         initial_time = datetime.now()
-        result = func(*args, **kwargs)
+        result = func(*args, **kwargs)#function decorates with output
         final_time = datetime.now()
         time_elapsed = final_time - initial_time
         print(f'Pasaron {time_elapsed.total_seconds()} segundos')
